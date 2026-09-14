@@ -9,6 +9,9 @@ turn with a greedy priority scheduler, and reinvests capital (land, livestock) o
 **Highlights:** pure-Python planner (no ML libs) · custom local simulator of the game rules for
 fast iteration · ~7× the baseline agent in local tests · validated and playing on Kaggle.
 
+<img width="1815" height="766" alt="image" src="https://github.com/user-attachments/assets/a8fad2d9-3cbd-428e-92cb-af4de8a114b8" />
+
+
 ## Strategy
 1. **Melon rush** — melon price collapses *quadratically*, so only the first ~150 melons market-wide are worth anything. Plant 22 on day 0, fertilize them with our own goose fertilizer at age 6 (caps yield 2 days early), sell on day 9–10 before the opponent.
 2. **Goose empire** — eggs use a *log* price curve (never crash), every animal drops 1 sellable fertilizer/day, CARE doubles egg output. Melon money → land + ~24 geese + 3 cows + 3 sheep (small premium markets).
